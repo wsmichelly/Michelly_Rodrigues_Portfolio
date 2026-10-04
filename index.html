@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michelly Rodrigues | Desenvolvedora & Analista de Sistemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
+  <!-- Matter.js para o efeito de tags físicas interativas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+  <!-- Importação do CSS externo na pasta do projeto -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="glow-effect"></div>
+
+  <!-- Navbar Flutuante -->
+  <header>
+    <div class="container">
+      <nav>
+         <a href="#" class="logo">Michelly Rodrigues</a>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#techs">Tecnologias</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" id="themeToggle" title="Alternar Tema">
+            <i class="fa-solid me fa-moon" id="themeIcon"></i>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+ <!-- Hero Section -->
+<section class="hero">
+  <!-- Foto no Topo -->
+  <div class="hero-image">
+    <img src="img/avatar.jpeg" alt="Foto de Michelly Rodrigues">
+  </div>
+
+  <!-- Conteúdo Centralizado (Texto e Botões) -->
+  <div class="hero-content">
+    <p class="hero-subtitle">
+      Eu sou a <strong>Michelly Rodrigues</strong>, estudante de Análise e Desenvolvimento de Sistemas. Combino a modelagem precisa de sistemas, processos de negócios reais e desenvolvimento para criar softwares bem estruturados.
+    </p>
+    
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">Ver Projetos <i class="fa-solid fa-arrow-down"></i></a>
+      <div class="social-links">
+        <a href="https://github.com/wsmichelly" target="_blank" class="social-btn">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="mailto:rodriguesmichelly833@gmail.com" class="social-btn">
+          <i class="fa-regular fa-envelope"></i> E-mail
+        </a>
+        <a href="https://www.linkedin.com/in/michellyrodrigues" target="_blank" class="social-btn">
+          <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="about-section">
+  <div class="section-header">
+    <h2 class="section-title">Sobre Mim</h2>
+    <p class="section-subtitle">Conheça um pouco da minha trajetória e formação</p>
+  </div>
+
+  <!-- A grade que divide em 2 colunas -->
+  <div class="about-grid">
+    
+    <!-- COLUNA DA ESQUERDA: Texto e Destaques -->
+    <div class="about-text">
+      <h3>Desenvolvimento & Visão de Negócio</h3>
+      <p>
+        Atualmente cursando o 3° período do tecnólogo em Análise e Desenvolvimento de Sistemas no CEUNSP (Conclusão: julho/2027).
+      </p>
+      <p>
+        Bagagem prática na rotina corporativa e administrativa, lidando diariamente com rotinas operacionais e sistemas ERPs de grande porte como TOTVS e SAP.</p>
+
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <div class="highlight-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <div>
+            <strong>Arquitetura & Modelagem:</strong> Modelagem conceitual, lógica e física de banco de dados (3FN) e diagramas UML.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUNA DA DIREITA: O Card de Informações -->
+    <div class="about-card-info">
+      <div class="info-list">
+        <div class="info-item">
+          <label>Localização</label>
+          <span>Cabreúva – SP, Brasil</span>
+        </div>
+        <div class="info-item">
+          <label>Formação Atual</label>
+          <span>Análise e Des. de Sistemas (CEUNSP)</span>
+        </div>
+        <div class="info-item">
+          <label>Foco Profissional</label>
+          <span>Desenvolvimento Software & ERP</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Habilidades e Experiência em Sanfona -->
+    <section id="skills" class="skills-section">
+      <div class="section-header">
+        <h2 class="section-title">Minhas Competências</h2>
+        <p class="section-subtitle">O equilíbrio entre lógica de programação, arquitetura de sistemas e experiência com ERPs corporativos.</p>
+      </div>
+
+      <div class="accordion-container">
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <span><i class="fa-solid fa-layer-group" style="margin-right: 10px; color: var(--accent-purple);"></i> Modelagem de Dados & Arquitetura</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p>Foco em transformar regras de negócio complexas em estruturas de dados limpas. Criação de Diagramas UML (Casos de Uso, Classe, Sequência), modelagem de Banco de Dados Relacional (Conceitual, Lógico e Físico) seguindo padrões até a 3ª Forma Normal (3FN).</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span><i class="fa-solid fa-terminal" style="margin-right: 10px; color: var(--accent-purple);"></i> Desenvolvimento de Software</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p>Construção de aplicações utilizando Python, JavaScript e Java. Domínio de conceitos de Programação Orientada a Objetos (POO), como encapsulamento, herança, polimorfismo e interfaces responsivas para web com HTML, CSS e JS.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span><i class="fa-solid fa-briefcase" style="margin-right: 10px; color: var(--accent-purple);"></i> Sistemas Corporativos & ERPs</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p>Vivência prática no lançamento de registros financeiros, conferência de dados e automação de fluxos operacionais utilizando sistemas ERP de nível industrial como <strong>TOTVS</strong> e <strong>SAP</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Grid de Tecnologias Conhecidas -->
+    <section id="techs" class="tech-grid-section">
+      <div class="section-header">
+        <h2 class="section-title">Tecnologias & Ferramentas</h2>
+        <p class="section-subtitle">Linguagens e ferramentas que utilizo na criação de soluções.</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-info">
+            <div class="tech-icon"><i class="fa-brands fa-python"></i></div>
+            <div>
+              <div class="tech-name">Python</div>
+              <div class="tech-cat">Linguagem</div>
+            </div>
+          </div>
+          <div class="tech-level-dots">
+            <div class="dot active"></div><div class="dot "></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-info">
+            <div class="tech-icon"><i class="fa-brands fa-js"></i></div>
+            <div>
+              <div class="tech-name">JavaScript</div>
+              <div class="tech-cat">Linguagem / Web</div>
+            </div>
+          </div>
+          <div class="tech-level-dots">
+            <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot"></div>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-info">
+            <div class="tech-icon"><i class="fa-brands fa-java"></i></div>
+            <div>
+              <div class="tech-name">Java</div>
+              <div class="tech-cat">Linguagem / POO</div>
+            </div>
+          </div>
+          <div class="tech-level-dots">
+            <div class="dot active"></div><div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-info">
+            <div class="tech-icon"><i class="fa-solid fa-database"></i></div>
+            <div>
+              <div class="tech-name">SQL & Banco de Dados</div>
+              <div class="tech-cat">Modelagem / 3FN</div>
+            </div>
+          </div>
+          <div class="tech-level-dots">
+            <div class="dot active"></div><div class="dot active"></div><div class="dot"></div><div class="dot"></div>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-info">
+            <div class="tech-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <div>
+              <div class="tech-name">Diagramas UML</div>
+              <div class="tech-cat">Engenharia de Software</div>
+            </div>
+          </div>
+          <div class="tech-level-dots">
+            <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot"></div>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-info">
+            <div class="tech-icon"><i class="fa-brands fa-git-alt"></i></div>
+            <div>
+              <div class="tech-name">Git & GitHub</div>
+              <div class="tech-cat">Controle de Versão</div>
+            </div>
+          </div>
+          <div class="tech-level-dots">
+            <div class="dot active"></div><div class="dot active"></div><div class="dot active"></div><div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meus Projetos -->
+    <section id="projects" class="projects-section">
+      <div class="section-header">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <p class="section-subtitle">Uma seleção do que construí durante a graduação acadêmica e estudos técnicos.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Projeto 1 -->
+        <div class="project-card">
+          <div>
+            <div class="project-tag">Arquitetura & Dados</div>
+            <h3 class="project-title">Doc.Flow — Tramitação Documental</h3>
+            <p class="project-desc">
+              Documentação técnica completa e modelagem conceitual, lógica e física (3FN) para um sistema de rastreamento e protocolo de documentos com diagramação UML detalhada.
+            </p>
+            <div class="project-techs">
+              <span class="tech-badge">UML</span>
+              <span class="tech-badge">SQL</span>
+              <span class="tech-badge">Engenharia de Requisitos</span>
+              <span class="tech-badge">PostgreSQL</span>
+            </div>
+          </div>
+          <a href="https://github.com/wsmichelly/Doc.Flow.git" target="_blank" class="project-link">
+            Ver Repositório <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Projeto 2 -->
+        <div class="project-card">
+          <div>
+            <div class="project-tag">Aplicação Web</div>
+            <h3 class="project-title">Sistema para Doação de Sangue</h3>
+            <p class="project-desc">
+              Aplicação web interativa desenvolvida para automatizar e otimizar o processo de triagem inicial de potenciais doadores de sangue, aplicando regras clínicas em tempo real. Desenvolvida em equipe aplicando a metodologia ágil Scrum.
+            </p>
+            <div class="project-techs">
+              <span class="tech-badge">HTML5</span>
+              <span class="tech-badge">CSS3</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Scrum</span>
+            </div>
+          </div>
+          <a href="https://github.com/wsmichelly/Triagem-Doa-o-Sangue.git" target="_blank" class="project-link">
+            Ver Repositório <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Projeto 3 -->
+        <div class="project-card">
+          <div>
+            <div class="project-tag">Integração Social </div>
+            <h3 class="project-title">MusicBox Web</h3>
+            <p class="project-desc">
+              Plataforma social e de rastreamento musical integrada ao Spotify, desenvolvida para explorar consumo de dados, avaliações e conexões entre usuários.
+            </p>
+            <div class="project-techs">
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">React Native</span>
+              <span class="tech-badge">Supabase</span>
+            </div>
+          </div>
+          <a href="https://github.com/Marcuz015/MusicsBox_web.git" target="_blank" class="project-link">
+            Ver Repositório <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action / Contato -->
+    <section id="contact" class="cta-box">
+      <h2>Contato:</h2>
+      <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto 30px auto;">
+        Conecte-se comigo para oportunidades de estágio, projetos ou parcerias. Será um prazer trocar experiências!
+      </p>
+      <a href="mailto:rodriguesmichelly833@gmail.com" class="btn-primary" style="padding: 14px 32px; font-size: 1rem;">
+        Entrar em Contato <i class="fa-regular fa-paper-plane"></i>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>&copy; 2026 Michelly Rodrigues Silva. Desenvolvido com foco e simplicidade.</div>
+      <div class="social-links">
+        <a href="https://github.com/wsmichelly" target="_blank" class="social-btn" style="padding: 6px 14px; font-size: 0.8rem;">GitHub</a>
+        <a href="mailto:rodriguesmichelly833@gmail.com" class="social-btn" style="padding: 6px 14px; font-size: 0.8rem;">E-mail</a>
+        <a href="https://www.linkedin.com/in/michellyrodrigues" target="_blank" class="social-btn" style="padding: 6px 14px; font-size: 0.8rem;">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Importação da lógica JavaScript externa em pasta/arquivo separado -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
